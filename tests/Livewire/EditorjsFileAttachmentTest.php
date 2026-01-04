@@ -1,7 +1,7 @@
 <?php
 
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
-use Athphane\FilamentEditorjs\Tests\Livewire\TestEditorjsComponent;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Tests\Livewire\TestEditorjsComponent;
 
 use function Pest\Livewire\livewire;
 
@@ -43,6 +43,6 @@ it('verifies editorjs component has correct configuration', function () {
     livewire(TestEditorjsComponent::class)
         ->assertFormFieldExists('content', function (EditorjsTextField $field): bool {
             // Check that the field has the correct view
-            return $field->getView() === 'filament-editorjs::components.editorjs-text-field';
+            return $field->getView() === 'filament-editorjs-mathlive::components.editorjs-text-field';
         });
 });

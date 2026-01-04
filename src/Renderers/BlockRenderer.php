@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 abstract class BlockRenderer
 {

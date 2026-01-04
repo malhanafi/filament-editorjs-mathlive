@@ -1,6 +1,6 @@
 <?php
 
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
 
 it('can instantiate editorjs text field', function () {
     $field = EditorjsTextField::make('content');

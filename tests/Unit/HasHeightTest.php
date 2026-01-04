@@ -1,7 +1,7 @@
 <?php
 
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
-use Athphane\FilamentEditorjs\Forms\Concerns\HasHeight;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Forms\Concerns\HasHeight;
 
 it('can set and get min height', function () {
     $field = new class('test') extends EditorjsTextField

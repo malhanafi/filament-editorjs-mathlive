@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class ListRenderer extends BlockRenderer
 {
@@ -13,7 +13,7 @@ class ListRenderer extends BlockRenderer
         // Escape each list item to prevent XSS
         $escapedItems = array_map([$this, 'escape'], $items);
 
-        return view('filament-editorjs::renderers.list', [
+        return view('filament-editorjs-mathlive::renderers.list', [
             'items'  => $escapedItems,
             'style'  => $style,
             'config' => $this->config,

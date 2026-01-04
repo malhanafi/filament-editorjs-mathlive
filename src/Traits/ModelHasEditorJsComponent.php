@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Traits;
+namespace Malhanafi\FilamentEditorjs\Traits;
 
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Spatie\Image\Enums\Fit;
@@ -61,7 +61,7 @@ trait ModelHasEditorJsComponent
     public function registerEditorJsMediaCollections(?array $mime_types = null, bool $generate_responsive_images = true): void
     {
         if ( ! $mime_types) {
-            $mime_types = config('filament-editorjs.image_mime_types');
+            $mime_types = config('filament-editorjs-mathlive.image_mime_types');
         }
 
         $this->addMediaCollection($this->editorjsMediaCollectionName())

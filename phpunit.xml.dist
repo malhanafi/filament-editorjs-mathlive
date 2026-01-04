@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="Athphane Test Suite">
+        <testsuite name="Malhanafi Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class QuoteRenderer extends BlockRenderer
 {
@@ -15,7 +15,7 @@ class QuoteRenderer extends BlockRenderer
         $escapedContent = $this->escape($content);
         $escapedCaption = $this->escape($caption);
 
-        return view('filament-editorjs::renderers.quote', [
+        return view('filament-editorjs-mathlive::renderers.quote', [
             'content'   => $escapedContent,
             'caption'   => $escapedCaption,
             'alignment' => $alignment,

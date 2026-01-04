@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Testing;
+namespace Malhanafi\FilamentEditorjs\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 

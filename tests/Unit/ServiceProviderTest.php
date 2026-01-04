@@ -1,13 +1,13 @@
 <?php
 
-use Athphane\FilamentEditorjs\FilamentEditorjsServiceProvider;
+use Malhanafi\FilamentEditorjs\FilamentEditorjsServiceProvider;
 
 it('has correct package name', function () {
     $serviceProvider = new FilamentEditorjsServiceProvider(app());
 
     $name = $serviceProvider::$name;
 
-    expect($name)->toBe('filament-editorjs');
+    expect($name)->toBe('filament-editorjs-mathlive');
 });
 
 it('has correct view namespace', function () {
@@ -15,5 +15,5 @@ it('has correct view namespace', function () {
 
     $viewNamespace = $serviceProvider::$viewNamespace;
 
-    expect($viewNamespace)->toBe('filament-editorjs');
+    expect($viewNamespace)->toBe('filament-editorjs-mathlive');
 });

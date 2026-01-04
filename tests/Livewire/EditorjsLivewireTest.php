@@ -1,6 +1,6 @@
 <?php
 
-use Athphane\FilamentEditorjs\Tests\Livewire\TestEditorjsComponent;
+use Malhanafi\FilamentEditorjs\Tests\Livewire\TestEditorjsComponent;
 
 use function Pest\Livewire\livewire;
 

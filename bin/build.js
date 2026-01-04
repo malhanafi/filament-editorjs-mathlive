@@ -46,7 +46,7 @@ const defaultOptions = {
 compile({
     ...defaultOptions,
     entryPoints: ['./resources/js/index.js'],
-    outfile: './resources/dist/filament-editorjs.js',
+    outfile: './resources/dist/filament-editorjs-mathlive.js',
 }).then(() => {
-    console.log(`Build completed for filament-editorjs.js`)
+    console.log(`Build completed for filament-editorjs-mathlive.js`)
 })

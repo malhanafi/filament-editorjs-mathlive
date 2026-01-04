@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Forms\Concerns;
+namespace Malhanafi\FilamentEditorjs\Forms\Concerns;
 
 use Closure;
 

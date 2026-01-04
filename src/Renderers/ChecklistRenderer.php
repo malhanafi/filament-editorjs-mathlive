@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class ChecklistRenderer extends BlockRenderer
 {
@@ -25,7 +25,7 @@ class ChecklistRenderer extends BlockRenderer
             }
         }
 
-        return view('filament-editorjs::renderers.checklist', [
+        return view('filament-editorjs-mathlive::renderers.checklist', [
             'items'  => $processedItems,
             'config' => $this->config,
         ])->render();

@@ -1,6 +1,6 @@
 <?php
 
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
 
 it('verifies default configuration', function () {
     // Test that the default configuration is loaded correctly

@@ -1,8 +1,8 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Tests\Livewire;
+namespace Malhanafi\FilamentEditorjs\Tests\Livewire;
 
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
@@ -38,12 +38,12 @@ class TestEditorjsComponent extends Component implements HasForms
         <div>
             <form wire:submit="submit">
                 {{ $this->form }}
-                
+
                 <button type="submit">
                     Submit
                 </button>
             </form>
-            
+
             <div>
                 Submitted content: {{ json_encode($this->data['content']) }}
             </div>

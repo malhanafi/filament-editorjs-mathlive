@@ -7,7 +7,7 @@
     :component="$getFieldWrapperView()"
     :field="$field"
 >
-    <div class="filament-editorjs">
+    <div class="filament-editorjs-mathlive">
         <div
             wire:ignore
             id="editorjs-{{ str_replace('.', '-', $statePath) }}"
@@ -21,7 +21,7 @@
                 minHeight: @js($getMinHeight()),
                 wire: $wire,
                 componentKey: @js($key),
-                imageMimeTypes: @js(config('filament-editorjs.image_mime_types')),
+                imageMimeTypes: @js(config('filament-editorjs-mathlive.image_mime_types')),
                 maxSize: 5242880,
                 canUpload: @js($recordExists())
             })"

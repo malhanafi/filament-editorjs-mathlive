@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class RawRenderer extends BlockRenderer
 {
@@ -13,7 +13,7 @@ class RawRenderer extends BlockRenderer
         // In a real implementation, you might want to provide an option to allow raw HTML
         $escapedHtml = $this->escape($html);
 
-        return view('filament-editorjs::renderers.raw', [
+        return view('filament-editorjs-mathlive::renderers.raw', [
             'html'   => $escapedHtml,
             'config' => $this->config,
         ])->render();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class TableRenderer extends BlockRenderer
 {
@@ -19,7 +19,7 @@ class TableRenderer extends BlockRenderer
             }
         }
 
-        return view('filament-editorjs::renderers.table', [
+        return view('filament-editorjs-mathlive::renderers.table', [
             'content' => $processedContent,
             'config'  => $this->config,
         ])->render();

@@ -1,16 +1,16 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Facades;
+namespace Malhanafi\FilamentEditorjs\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Athphane\FilamentEditorjs\FilamentEditorjs
+ * @see \Malhanafi\FilamentEditorjs\FilamentEditorjs
  */
 class FilamentEditorjs extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Athphane\FilamentEditorjs\FilamentEditorjs::class;
+        return \Malhanafi\FilamentEditorjs\FilamentEditorjs::class;
     }
 }

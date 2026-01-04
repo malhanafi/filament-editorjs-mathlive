@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class ParagraphRenderer extends BlockRenderer
 {
@@ -9,7 +9,7 @@ class ParagraphRenderer extends BlockRenderer
         $data = $block['data'] ?? [];
         $content = $data['text'] ?? '';
 
-        return view('filament-editorjs::renderers.paragraph', [
+        return view('filament-editorjs-mathlive::renderers.paragraph', [
             'content' => $content,
             'config'  => $this->config,
         ])->render();

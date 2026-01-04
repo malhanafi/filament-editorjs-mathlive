@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Forms\Concerns;
+namespace Malhanafi\FilamentEditorjs\Forms\Concerns;
 
 trait HasTools
 {
@@ -17,11 +17,11 @@ trait HasTools
     public function setDefaultTools(): static
     {
         // Transform the config array of strings into an associative array with empty config
-        $defaults = config('filament-editorjs.profiles.' . config('filament-editorjs.default_profile'));
+        $defaults = config('filament-editorjs-mathlive.profiles.' . config('filament-editorjs-mathlive.default_profile'));
 
         $this->tools = []; // Reset
 
-        foreach ($defaults as $tool) {
+        foreach ($defaults ?? [] as $tool) {
             $this->tools[$tool] = []; // No specific config by default
         }
 
@@ -68,7 +68,7 @@ trait HasTools
      */
     public function tools(string $tool_profile): static
     {
-        $this->tools = config('filament-editorjs.profiles.' . $tool_profile);
+        $this->tools = config('filament-editorjs-mathlive.profiles.' . $tool_profile);
 
         return $this;
     }

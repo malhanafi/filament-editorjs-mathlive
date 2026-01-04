@@ -1,6 +1,5 @@
 <?php
 
-// config for Athphane/FilamentEditorjs
 return [
     /**
      * The profiles to use for the editorjs field.
@@ -11,10 +10,6 @@ return [
             'header', 'image', 'delimiter', 'list', 'underline', 'quote', 'table',
             'raw', 'code', 'inline-code', 'style', 'checklist',
         ],
-        // 'pro' => [
-        //     'header', 'image', 'delimiter', 'list', 'underline', 'quote', 'table',
-        //     'raw', 'code', 'inline-code', 'style',
-        // ],
     ],
 
     /**

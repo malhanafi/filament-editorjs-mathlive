@@ -1,7 +1,7 @@
 <?php
 
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
-use Athphane\FilamentEditorjs\Forms\Concerns\HasTools;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Forms\Concerns\HasTools;
 
 it('can set default tools from config', function () {
     $field = new class('test') extends EditorjsTextField

@@ -1,9 +1,9 @@
 # Filament EditorJS
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/athphane/filament-editorjs.svg?style=flat-square)](https://packagist.org/packages/athphane/filament-editorjs)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/athphane/filament-editorjs/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/athphane/filament-editorjs/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/athphane/filament-editorjs/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/athphane/filament-editorjs/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/athphane/filament-editorjs.svg?style=flat-square)](https://packagist.org/packages/athphane/filament-editorjs)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/malhanafi/filament-editorjs-mathlive.svg?style=flat-square)](https://packagist.org/packages/malhanafi/filament-editorjs)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/malhanafi/filament-editorjs-mathlive/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/malhanafi/filament-editorjs/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/malhanafi/filament-editorjs-mathlive/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/malhanafi/filament-editorjs/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/malhanafi/filament-editorjs-mathlive.svg?style=flat-square)](https://packagist.org/packages/malhanafi/filament-editorjs)
 
 An EditorJS field for Filament, with support for image uploads using Spatie's Media Library package.
 
@@ -14,19 +14,19 @@ An EditorJS field for Filament, with support for image uploads using Spatie's Me
 You can install the package via composer:
 
 ```bash
-composer require athphane/filament-editorjs
+composer require malhanafi/filament-editorjs-mathlive
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="filament-editorjs-config"
+php artisan vendor:publish --tag="filament-editorjs-mathlive-config"
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="filament-editorjs-views"
+php artisan vendor:publish --tag="filament-editorjs-mathlive-views"
 ```
 
 This is the contents of the published config file:
@@ -81,7 +81,7 @@ have a NULLABLE `content` column of type json in your database table. This colum
 
 Your model must implement the `Spatie\MediaLibrary\HasMedia` interface, and use the `Spatie\MediaLibrary\InteractsWithMedia` trait.
 
-Next, you must use this package's `Athphane\FilamentEditorjs\Traits\ModelHasEditorJsComponent` trait in your model. This
+Next, you must use this package's `Malhanafi\FilamentEditorjs\Traits\ModelHasEditorJsComponent` trait in your model. This
 trait offers a couple of methods to help you set up your model to work with the editorjs field.
 
 #### Changing the default column name for the content field
@@ -230,7 +230,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [athphane](https://github.com/athphane)
+- [malhanafi](https://github.com/malhanafi)
 - [All Contributors](../../contributors)
 
 ## License

@@ -1,8 +1,8 @@
 <?php
 
-namespace Athphane\FilamentEditorjs;
+namespace Malhanafi\FilamentEditorjs;
 
-use Athphane\FilamentEditorjs\Renderers\BlockRenderer;
+use Malhanafi\FilamentEditorjs\Renderers\BlockRenderer;
 
 class FilamentEditorjs
 {
@@ -13,7 +13,7 @@ class FilamentEditorjs
      */
     public static function renderContent($content, array $config = []): string
     {
-        $manager = app('filament-editorjs-renderer');
+        $manager = app('filament-editorjs-mathlive-renderer');
 
         return $manager->renderContent($content, $config);
     }
@@ -23,7 +23,7 @@ class FilamentEditorjs
      */
     public static function addRenderer(BlockRenderer $renderer): void
     {
-        app('filament-editorjs-renderer')->addRenderer($renderer);
+        app('filament-editorjs-mathlive-renderer')->addRenderer($renderer);
     }
 
     /**
@@ -31,7 +31,7 @@ class FilamentEditorjs
      */
     public static function addRenderers(array $renderers): void
     {
-        $manager = app('filament-editorjs-renderer');
+        $manager = app('filament-editorjs-mathlive-renderer');
         foreach ($renderers as $renderer) {
             if ($renderer instanceof BlockRenderer) {
                 $manager->addRenderer($renderer);

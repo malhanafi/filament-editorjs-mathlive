@@ -1,12 +1,12 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class DelimiterRenderer extends BlockRenderer
 {
     public function render(array $block): string
     {
-        return view('filament-editorjs::renderers.delimiter', [
+        return view('filament-editorjs-mathlive::renderers.delimiter', [
             'config' => $this->config,
         ])->render();
     }

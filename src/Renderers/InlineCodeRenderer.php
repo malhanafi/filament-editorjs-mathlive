@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class InlineCodeRenderer extends BlockRenderer
 {
@@ -12,7 +12,7 @@ class InlineCodeRenderer extends BlockRenderer
         // Escape the code content to prevent XSS
         $escapedCode = $this->escape($code);
 
-        return view('filament-editorjs::renderers.inline-code', [
+        return view('filament-editorjs-mathlive::renderers.inline-code', [
             'code'   => $escapedCode,
             'config' => $this->config,
         ])->render();

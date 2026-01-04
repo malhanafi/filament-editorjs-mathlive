@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class ImageRenderer extends BlockRenderer
 {
@@ -18,7 +18,7 @@ class ImageRenderer extends BlockRenderer
         $url = $this->escape($url);
         $caption = $this->escape($caption);
 
-        return view('filament-editorjs::renderers.image', [
+        return view('filament-editorjs-mathlive::renderers.image', [
             'url'            => $url,
             'caption'        => $caption,
             'withBorder'     => $withBorder,

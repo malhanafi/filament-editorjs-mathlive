@@ -12,6 +12,7 @@ import InlineCode from '@editorjs/inline-code'
 import RawTool from '@editorjs/raw'
 import { StyleInlineTool } from 'editorjs-style'
 import DragDrop from 'editorjs-drag-drop'
+import MathBlock from './editorjs-math.js';
 
 window.filamentEditorJsTools = window.filamentEditorJsTools || {}
 
@@ -182,7 +183,11 @@ export function initEditorJsInstance({
         data: state,
         placeholder,
         readOnly,
-        tools: enabledTools,
+        tools: {
+            math: MathBlock,
+            ...enabledTools,
+        },
+        inlineToolbar: true,
         async onChange() {
             try {
                 const output = await instance.save()

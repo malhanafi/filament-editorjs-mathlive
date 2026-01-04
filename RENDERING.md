@@ -7,7 +7,7 @@ The Filament EditorJS package now includes a robust rendering system that allows
 ### Using the Main Package Class
 
 ```php
-use Athphane\FilamentEditorjs\FilamentEditorjs;
+use Malhanafi\FilamentEditorjs\FilamentEditorjs;
 
 // In your controller or wherever you need to render the content
 $content = '{"time":1689427598038,"blocks":[{"data":{"message":"Hello World"},"type":"paragraph"}],"version":"2.27.2"}';
@@ -29,7 +29,7 @@ echo $output;
 ### Using the Component Static Method
 
 ```php
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
 
 $content = '{"time":1689427598038,"blocks":[{"data":{"message":"Hello World"},"type":"paragraph"}],"version":"2.27.2"}';
 $output = EditorjsTextField::renderContent($content);
@@ -58,8 +58,8 @@ There are two separate configuration steps:
 Configure renderers in your `app/Providers/AppServiceProvider.php`. These handle the display of custom blocks on the frontend:
 
 ```php
-use Athphane\FilamentEditorjs\FilamentEditorjs;
-use Athphane\FilamentEditorjs\Renderers\BlockRenderer;
+use Malhanafi\FilamentEditorjs\FilamentEditorjs;
+use Malhanafi\FilamentEditorjs\Renderers\BlockRenderer;
 
 class CustomBlockRenderer extends BlockRenderer
 {
@@ -92,7 +92,7 @@ public function boot()
 Add plugins to your EditorJS fields in your forms, where you can use dynamic configuration:
 
 ```php
-use Athphane\FilamentEditorjs\Forms\Components\EditorjsTextField;
+use Malhanafi\FilamentEditorjs\Forms\Components\EditorjsTextField;
 
 EditorjsTextField::make('content')
     ->addPlugin('linkTool', [

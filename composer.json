@@ -1,21 +1,21 @@
 {
-    "name": "athphane/filament-editorjs",
-    "description": "This is my package filament-editorjs",
+    "name": "malhanafi/filament-editorjs-mathlive",
+    "description": "This is my package filament-editorjs-mathlive",
     "keywords": [
-        "athphane",
+        "malhanafi",
         "laravel",
-        "filament-editorjs"
+        "filament-editorjs-mathlive"
     ],
-    "homepage": "https://github.com/athphane/filament-editorjs",
+    "homepage": "https://github.com/malhanafi/filament-editorjs-mathlive",
     "support": {
-        "issues": "https://github.com/athphane/filament-editorjs/issues",
-        "source": "https://github.com/athphane/filament-editorjs"
+        "issues": "https://github.com/malhanafi/filament-editorjs-mathlive/issues",
+        "source": "https://github.com/malhanafi/filament-editorjs-mathlive"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "athphane",
-            "email": "athphane@gmail.com",
+            "name": "malhanafi",
+            "email": "malhanafi@gmail.com",
             "role": "Developer"
         }
     ],
@@ -41,13 +41,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Athphane\\FilamentEditorjs\\": "src/",
-            "Athphane\\FilamentEditorjs\\Database\\Factories\\": "database/factories/"
+            "Malhanafi\\FilamentEditorjs\\": "src/",
+            "Malhanafi\\FilamentEditorjs\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Athphane\\FilamentEditorjs\\Tests\\": "tests/"
+            "Malhanafi\\FilamentEditorjs\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Athphane\\FilamentEditorjs\\FilamentEditorjsServiceProvider"
+                "Malhanafi\\FilamentEditorjs\\FilamentEditorjsServiceProvider"
             ],
             "aliases": {
-                "FilamentEditorjs": "Athphane\\FilamentEditorjs\\Facades\\FilamentEditorjs"
+                "FilamentEditorjs": "Malhanafi\\FilamentEditorjs\\Facades\\FilamentEditorjs"
             }
         }
     },

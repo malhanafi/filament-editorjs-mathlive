@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class HeaderRenderer extends BlockRenderer
 {
@@ -16,7 +16,7 @@ class HeaderRenderer extends BlockRenderer
         // Escape the text to prevent XSS
         $escapedText = $this->escape($text);
 
-        return view('filament-editorjs::renderers.header', [
+        return view('filament-editorjs-mathlive::renderers.header', [
             'level'  => $level,
             'text'   => $escapedText,
             'config' => $this->config,

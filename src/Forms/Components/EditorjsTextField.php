@@ -1,10 +1,10 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Forms\Components;
+namespace Malhanafi\FilamentEditorjs\Forms\Components;
 
-use Athphane\FilamentEditorjs\Forms\Concerns\HasHeight;
-use Athphane\FilamentEditorjs\Forms\Concerns\HasTools;
-use Athphane\FilamentEditorjs\Traits\ModelHasEditorJsComponent;
+use Malhanafi\FilamentEditorjs\Forms\Concerns\HasHeight;
+use Malhanafi\FilamentEditorjs\Forms\Concerns\HasTools;
+use Malhanafi\FilamentEditorjs\Traits\ModelHasEditorJsComponent;
 use Exception;
 use Filament\Forms\Components\Concerns\HasFileAttachments;
 use Filament\Forms\Components\Field;
@@ -24,7 +24,7 @@ class EditorjsTextField extends Field
     use HasPlaceholder;
     use HasTools;
 
-    protected string $view = 'filament-editorjs::components.editorjs-text-field';
+    protected string $view = 'filament-editorjs-mathlive::components.editorjs-text-field';
 
     protected ?int $mediaId = null;
 
@@ -124,6 +124,6 @@ class EditorjsTextField extends Field
      */
     public static function renderContent($content, array $config = []): string
     {
-        return \Athphane\FilamentEditorjs\FilamentEditorjs::renderContent($content, $config);
+        return \Malhanafi\FilamentEditorjs\FilamentEditorjs::renderContent($content, $config);
     }
 }

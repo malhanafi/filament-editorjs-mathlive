@@ -1,6 +1,6 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Renderers;
+namespace Malhanafi\FilamentEditorjs\Renderers;
 
 class BlockRendererManager
 {
@@ -49,7 +49,7 @@ class BlockRendererManager
         }
 
         // Use the wrapper template to wrap all blocks
-        $wrapper = $config['wrapper_template'] ?? $this->defaultConfig['wrapper_template'] ?? 'filament-editorjs::renderers.content-wrapper';
+        $wrapper = $config['wrapper_template'] ?? $this->defaultConfig['wrapper_template'] ?? 'filament-editorjs-mathlive::renderers.content-wrapper';
 
         return view($wrapper, [
             'blocks' => $output,

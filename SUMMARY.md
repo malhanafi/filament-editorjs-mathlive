@@ -31,8 +31,8 @@ Filament EditorJS is a Laravel package that provides an EditorJS field for the F
 - Assets automatically loaded on all pages where the Filament panel was used
 - Asset registration code in `FilamentEditorjsServiceProvider::getAssets()`:
   ```php
-  Css::make('filament-editorjs-styles', __DIR__ . '/../resources/dist/filament-editorjs.css'),
-  Js::make('filament-editorjs-scripts', __DIR__ . '/../resources/dist/filament-editorjs.js'),
+  Css::make('filament-editorjs-mathlive-styles', __DIR__ . '/../resources/dist/filament-editorjs-mathlive.css'),
+  Js::make('filament-editorjs-mathlive-scripts', __DIR__ . '/../resources/dist/filament-editorjs-mathlive.js'),
   ```
 
 ### New Implementation (On-Demand Loading)
@@ -43,8 +43,8 @@ Filament EditorJS is a Laravel package that provides an EditorJS field for the F
 #### Blade Template Implementation
 The template includes these attributes for on-demand loading:
 ```blade
-x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('filament-editorjs-styles', package: 'athphane/filament-editorjs'))]"
-x-load-js="[@js(\Filament\Support\Facades\FilamentAsset::getScriptSrc('filament-editorjs-scripts', package: 'athphane/filament-editorjs'))]"
+x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('filament-editorjs-mathlive-styles', package: 'malhanafi/filament-editorjs-mathlive'))]"
+x-load-js="[@js(\Filament\Support\Facades\FilamentAsset::getScriptSrc('filament-editorjs-mathlive-scripts', package: 'malhanafi/filament-editorjs-mathlive'))]"
 x-data="editorjs({...})"
 ```
 

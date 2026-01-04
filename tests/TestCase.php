@@ -1,8 +1,8 @@
 <?php
 
-namespace Athphane\FilamentEditorjs\Tests;
+namespace Malhanafi\FilamentEditorjs\Tests;
 
-use Athphane\FilamentEditorjs\FilamentEditorjsServiceProvider;
+use Malhanafi\FilamentEditorjs\FilamentEditorjsServiceProvider;
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
@@ -26,7 +26,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Athphane\\FilamentEditorjs\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Malhanafi\\FilamentEditorjs\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
