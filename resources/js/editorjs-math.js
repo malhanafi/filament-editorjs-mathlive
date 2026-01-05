@@ -13,25 +13,32 @@ export default class MathBlock {
     }
 
     render() {
-        if (!this.wrapper) {
-            this.wrapper = document.createElement('div')
+        if (this.wrapper) return this.wrapper
 
-            this.wrapper.contentEditable = false
+        this.wrapper = document.createElement('div')
+        this.wrapper.contentEditable = false
 
-            this.mathField = document.createElement('math-field')
-            this.mathField.id = 'mathfield-' + Math.random().toString(36).substr(2, 9);
-            this.mathField.value = this.data.latex || ''
-            this.mathField.style.width = '100%'
+        this.mathField = document.createElement('math-field')
+        this.mathField.value = this.data.latex || ''
+        this.mathField.style.width = '100%'
 
-            this.wrapper.appendChild(this.mathField)
-        }
+        this.mathField.addEventListener('input', () => {
+            this.data.latex = this.mathField.value
+        })
 
+        this.wrapper.appendChild(this.mathField)
         return this.wrapper
     }
 
     save() {
+        try {
+            // Finalize MathLive internal buffer
+            this.mathField?.executeCommand?.('commit')
+        } catch (e) {
+        }
+
         return {
-            latex: this.mathField.value,
+            latex: this.mathField?.value,
         }
     }
 }
